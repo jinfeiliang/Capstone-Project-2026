@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="dark" class="h-100">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="d-flex flex-column h-100">
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Home</a>
@@ -43,8 +43,11 @@
       </div>
     </nav>
 
-    <main>
-      <h1>Testing</h1>
+    <main class="d-flex flex-grow-1">
+      <div class="container-fluid d-flex justify-content-center align-items-center column-gap-2">
+        <button class="btn btn-outline-primary btn-lg">Test</button>
+        <button class="btn btn-primary btn-lg">Test</button>
+      </div>
     </main>
 
     <script
