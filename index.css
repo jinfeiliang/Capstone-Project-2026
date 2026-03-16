@@ -1,16 +1,8 @@
-html {
-    width: 100%;
-    height: 100% !important;
-}
-body {
-    width: 100%;
-    height: 100% !important;
-}
-
 :root {
     --primary: #2E7D32;
     --secondary: #66BB6A;
-    --background: #F7F9F4;
+    /* --background: #F7F9F4; */
+    --background: linear-gradient(135deg, #1f6f43, #2e8b57, #3fa34d);
     --food_accent: #F4A261;
     --shelter_accent: #8D6E63;
     --text: #2F2F2F;
@@ -18,6 +10,26 @@ body {
     --call_to_action: #8BC34A;
 }
 
+html {
+    width: 100%;
+    height: 100% !important;
+}
+body {
+    width: 100%;
+    height: 100% !important;
+    color: var(--text);
+}
+
+
+.food_accent {
+    background-color: var(--food_accent);
+}
+.shelter_accent {
+    background-color: var(--shelter_accent);
+}
 nav {
-    background-color: var(--primary);
+    background-color: var(--secondary);
+}
+#Main_Title {
+    background: var(--background);
 }

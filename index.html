@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Food & Home | Home</title>
 
     <link rel="stylesheet" href="Scss\main.css" />
     <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
@@ -47,14 +47,14 @@
                 </li>
               </ul>
             </li>
-            <div class="input-group">
+            
               <li class="nav-item">
                 <a class="nav-link" href="../About/about.html">Contribute</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../About/about.html">Contact us</a>
+                <a class="nav-link" href="../About/test.html">Contact us</a>
               </li>
-            </div>
+            
           </ul>
         </div>
       </div>
@@ -63,8 +63,10 @@
     <main
       class="p-0 flex-grow-1 container-fluid d-flex flex-column align-items-center"
     >
-      <section class="p-0 container-fluid bg-success">
-        <div class="container-sm p-1 bg-danger">
+      <section id="Main_Title"
+        class="container-fluid p-0 pt-5 pb-5 m-0 min-vh-100 d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="container-sm">
           <h1 class="text-center">Food & Home</h1>
           <h2 class="text-center mb-5"></h2>
           <h4 class="text-center m-5">
@@ -73,28 +75,23 @@
             it most.
           </h4>
         </div>
-      </section>
-
-      <section
-        class="p-0 container-fluid bg-warning d-flex justify-content-center"
-      >
         <div
           class="row container-sm d-flex justify-content-center column-gap-2 row-gap-2"
         >
-          <button class="btn btn-info btn-lg col-4">Explorar</button>
-          <button class="btn btn-primary btn-lg col-4 text-truncate">
-            Esternocleidomastodeo
+          <button class="btn btn-primary btn-lg col-4 text-truncate">Food</button>
+          <button class="btn btn-warning btn-lg col-4 text-truncate">
+            Shelter
           </button>
         </div>
       </section>
 
       <section
-        class="container-fluid bg-danger p-0 m-0 d-flex justify-content-center"
+        class="container-fluid bg-danger p-0 m-0 d-flex flex-column align-items-center"
       >
-        <div class="container-sm p-0 m-0">
+        <article class="container-sm p-0 m-0">
           <div class="row m-0">
             <div
-              class="col p-0 bg-dark d-flex align-items-center justify-content-center"
+              class="col-md p-0 bg-dark d-flex align-items-center justify-content-center"
             >
               <p class="text-light p-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -112,16 +109,48 @@
                 dolorum fugit!
               </p>
             </div>
-            <div class="col p-0">
+            <div class="col-md p-0">
               <img
                 class="h-100 w-100"
                 style="object-fit: cover"
                 src="https://images.squarespace-cdn.com/content/v1/5ee52f7d9edc8a7ee635591a/8df50655-6b68-460e-ad6c-5230001b9d5a/240404+-+063944+-+001.jpg"
               />
             </div>
-          </div>
-        </div>
+          </article>
+          <!-- ------------------------------------------ -->
+          <article class="container-sm p-0 m-0">
+          <div class="row m-0">
+            <div class="col-md p-0">
+              <img
+                class="h-100 w-100"
+                style="object-fit: cover"
+                src="https://images.squarespace-cdn.com/content/v1/5ee52f7d9edc8a7ee635591a/8df50655-6b68-460e-ad6c-5230001b9d5a/240404+-+063944+-+001.jpg"
+              />
+            </div>
+            <div
+              class="col-md p-0 bg-dark d-flex align-items-center justify-content-center"
+            >
+              <p class="text-light p-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis reprehenderit libero dolor, unde autem, iusto pariatur
+                sapiente magni architecto blanditiis et dignissimos voluptas ex
+                hic dolore natus laboriosam labore eveniet quasi aut earum alias
+                deleniti incidunt! Odit ab dolorem eligendi. Corrupti adipisci
+                maiores ab numquam voluptatem similique vel illum ex quam
+                magnam, quibusdam error explicabo blanditiis praesentium non
+                necessitatibus tenetur doloremque sunt rerum nulla odit ipsum
+                vero possimus perferendis. Inventore officia sed aperiam omnis
+                doloremque facere quo qui enim incidunt maxime? Eos excepturi
+                cum, temporibus odio nostrum praesentium, tempora accusantium,
+                labore illum debitis pariatur distinctio modi tempore mollitia
+                dolorum fugit!
+              </p>
+            </div>
+          </article>
       </section>
+
+
+
     </main>
 
     <footer></footer>
