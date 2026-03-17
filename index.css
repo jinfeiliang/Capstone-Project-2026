@@ -40,6 +40,48 @@ nav {
   color: #8bc34a; /* your highlight green */
 }
 
+#Information {
+ 
+}
+
+article.bg-half-dark{
+  opacity: 0;
+
+  /* Apply the scroll-driven animation */
+  animation: slide-in-left linear forwards;
+  animation-timeline: view(); /* Links animation to element's visibility */
+  animation-range: entry 0% cover 40%; /* Adjust range as needed */
+}
+article.bg-half-dark-reverse{
+  opacity: 0;
+
+  /* Apply the scroll-driven animation */
+  animation: slide-in-right linear forwards;
+  animation-timeline: view(); /* Links animation to element's visibility */
+  animation-range: entry 0% cover 30%; /* Adjust range as needed */
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%); /* Start position: fully off-screen to the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End position: original position */
+  }
+}
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Start position: fully off-screen to the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End position: original position */
+  }
+}
+
 @media (min-width: 768px) {
   .bg-half-dark {
     background: #212529;
