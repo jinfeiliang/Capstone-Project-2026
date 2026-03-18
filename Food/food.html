@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food</title>
-    <link rel="stylesheet" href="food.css" />
+    <title>Food & Home | Food</title>
 
     <link rel="stylesheet" href="../Scss\main.css" />
-    <script src="../node_modules\bootstrap\dist\js\bootstrap.js"></script>
-
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="food.css" />
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css"
       rel="stylesheet"
     />
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js"></script>
   </head>
+
   <body class="d-flex flex-column h-100">
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">Home</a>
         <button
@@ -32,7 +32,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+            <li id="Test" class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -53,28 +53,34 @@
                 </li>
               </ul>
             </li>
-            <div class="input-group">
-              <li class="nav-item">
-                <a class="nav-link" href="../About/about.html">Contribute</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../About/about.html">Contact us</a>
-              </li>
-            </div>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../About/about.html">Contribute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../About/test.html">Contact us</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <main class="d-flex flex-grow-1">
-      <div id="map"></div>
+    <main
+      class="p-0 flex-grow-1 container-fluid d-flex flex-column align-items-center"
+    >
+      <section
+        class="container-fluid p-0 pt-5 pb-5 m-0 min-vh-100 d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="container-sm">
+          <div id="map"></div>
+
+        </div>
+        <div class="container-sm"></div>
+      </section>
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <footer class="">HOLAAAAAA</footer>
+
     <script src="food.js" defer></script>
   </body>
 </html>
