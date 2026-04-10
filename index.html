@@ -1,83 +1,145 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark" class="h-100">
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food & Home | Home</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Food & Home | Home</title>
+    <link rel="stylesheet" href="Scss/main.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <script src="../nav.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <link rel="stylesheet" href="Scss\main.css" />
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="index.css" />
-</head>
-
-<body class="d-flex flex-column h-100">
-  <nav class="navbar sticky-top navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li id="Test" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Find
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="../Shelter/shelter.html">shelter</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../Food/food.html">food</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="../About/about.html">Contribute</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../About/test.html">Contact us</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main class="p-0 flex-grow-1 container-fluid d-flex flex-column align-items-center">
-    <section id="Main_Title"
-      class="container-fluid p-0 pt-5 pb-5 m-0 min-vh-100 d-flex flex-column align-items-center justify-content-center">
-      <div class="container-sm fade-in-top">
-        <h1 class="display-1 text-center">Food & Home</h1>
-        <h2 class="text-center mb-5"></h2>
-        <h4 class="text-center m-5">
-          Find food and shelter nearby—fast. Our platform connects you with
-          local resources to help you get the support you need when you need
-          it most.
-        </h4>
-      </div>
-      <div class="row container-sm d-flex justify-content-center column-gap-2 row-gap-2 fade-in-top">
-        <button class="btn btn-primary btn-lg col-4 text-truncate shadow-lg">Food</button>
-        <button class="btn btn-warning btn-lg col-4 text-truncate shadow-lg">
-          Shelter
+  <body class="d-flex flex-column h-100">
+    <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Food & Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../Map/map.html"
+                ><i class="bi bi-search me-2"></i>Find</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href=""
+                ><i class="bi bi-patch-plus me-2"></i>Contribute</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../About/about.html"
+                ><span class="me-2">😎</span>About us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../Credits/credits.html"
+                ><i class="bi bi-clipboard me-2"></i>Credits</a
+              >
+            </li>
+            <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+              <div class="vr d-none d-lg-flex h-100 mx-lg-2 bg-white"></div>
+              <hr class="d-lg-none my-2 text-white-50">
+            </li>
+            <li class="nav-item dropdown" data-bs-theme="light">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme">
+                <i class="bi bi-circle-half"></i>
+                <span class="d-lg-none ms-2">Toggle theme</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                    <i class="bi bi-sun-fill"></i><span class="ms-2">Light</span>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
+                    <i class="bi bi-moon-stars-fill"></i><span class="ms-2">Dark</span>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </nav>
+
+    <main
+      class="p-0 flex-grow-1 container-fluid d-flex flex-column align-items-center"
+    >
+      <section
+        id="Main_Title"
+        class="container-fluid p-0 pt-5 pb-5 m-0 min-vh-100 d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="container-sm fade-in-top">
+          <h1 class="display-1 text-center">Food & Home</h1>
+          <h2 class="text-center">Find food and shelter nearby fast.</h2>
+          <h3 class="text-center m-5 mt-3">
+            Our platform provides you with a
+            map to look for local resources to help you get the support you need
+            when you need it most.
+          </h3>
+        </div>
+        <div
+          class="row container-sm d-flex justify-content-center column-gap-2 row-gap-2 fade-in-top"
+        >
+          <a
+            href="../Map/map.html"
+            class="btn btn-primary btn-lg col-4 text-truncate text-li fs-4"
+            ><i class="bi bi-search me-2"></i>Find</a
+          >
+          <a
+            href="Shelter/shelter.html"
+            class="btn btn-warning btn-lg col-4 text-truncate fs-4"
+          >
+            IDK
+          </a>
+        </div>
+      </section>
 
       <section
-        id="Information" class="container-fluid p-0 m-0 d-flex flex-column align-items-center bg-light-subtle overflox-x-clip"
+        id="Information"
+        class="container-fluid p-0 m-0 d-flex flex-column align-items-center overflox-x-clip"
       >
-        <article class="container-fluid d-flex justify-content-center p-0 m-0 bg-half-dark">
+        <article
+          class="container-fluid d-flex justify-content-center p-0 m-0 bg-half-dark"
+        >
           <div class="container-sm p-0 row m-0">
             <div
-              class="col-md p-0 bg-dark d-flex flex-column align-items-center justify-content-center"
+              class="col-md p-0 d-flex flex-column align-items-center justify-content-center bg-article-dark-theme"
             >
-              <h2 class="ps-5 pt-5 pe-5">Food Insecurity in New York City</h2>
-              <p class="text-light ps-5 pb-5 pe-5">
-                Over <span class="Stat">1.2 million</span>  experience food insecurity each year, meaning they do not always have reliable access to enough affordable, nutritious food. Organizations like Food Bank For New York City report that demand for food assistance has remained significantly higher than pre-pandemic levels, with many families relying on food pantries regularly.
+              <h2 class="ps-5 pt-5 pe-5 text-decoration-underline text-light">
+                Food Insecurity in New York City
+              </h2>
+              <p class="ps-5 pb-5 pe-5 text-light">
+                Over
+                <span class="fw-bold text-primary h2">1.2 million</span>
+                experience food insecurity each year, meaning they do not always
+                have reliable access to enough affordable, nutritious food.
+                Organizations like Food Bank For New York City report that
+                demand for food assistance has remained significantly higher
+                than pre-pandemic levels, with many families relying on food
+                pantries regularly.
               </p>
             </div>
             <div class="col-md p-0">
@@ -87,17 +149,27 @@
                 src="https://www.immanueltemplechurch.com/wp-content/uploads/2024/11/Food-Pantry.png"
               />
             </div>
-          </article>
-          <!-- ------------------------------------------ -->
+          </div>
+        </article>
 
-          <article class="container-fluid d-flex justify-content-center p-0 m-0 bg-half-dark-reverse">
+        <article
+          class="container-fluid d-flex justify-content-center p-0 m-0 bg-half-dark-reverse"
+        >
           <div class="container-sm p-0 row m-0 flex-row-reverse">
             <div
-              class="col-md p-0 bg-dark d-flex flex-column align-items-center justify-content-center"
+              class="col-md p-0 d-flex flex-column align-items-center justify-content-center bg-article-dark-theme"
             >
-              <h2 class="ps-5 pt-5 pe-5">Homelessness & Shelter in NYC</h2>
-              <p class="text-light ps-5 pb-5 pe-5">
-                Each night, more than <span class="Stat">80,000 people</span> sleep in the New York City shelter system, including thousands of families with children. According to the New York City Department of Homeless Services, NYC operates the largest municipal shelter system in the United States, providing temporary housing, meals, and support services to those in need.
+              <h2 class="ps-5 pt-5 pe-5 text-decoration-underline text-white">
+                Homelessness & Shelter in NYC
+              </h2>
+              <p class="text-white ps-5 pb-5 pe-5">
+                Each night, more than
+                <span class="fw-bold text-primary h2">80,000 people</span> sleep
+                in the New York City shelter system, including thousands of
+                families with children. According to the New York City
+                Department of Homeless Services, NYC operates the largest
+                municipal shelter system in the United States, providing
+                temporary housing, meals, and support services to those in need.
               </p>
             </div>
             <div class="col-md p-0">
@@ -107,15 +179,28 @@
                 src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/izs4JYCl7GLk/v1/-1x-1.webp"
               />
             </div>
-          </article>
-          <article class="container-fluid d-flex justify-content-center p-0 m-0 bg-half-dark">
+          </div>
+        </article>
+
+        <article
+          class="container-fluid d-flex justify-content-center p-0 m-0 bg-half-dark"
+        >
           <div class="container-sm p-0 row m-0">
             <div
-              class="col-md p-0 bg-dark d-flex flex-column align-items-center justify-content-center"
+              class="col-md p-0 d-flex flex-column align-items-center justify-content-center bg-article-dark-theme"
             >
-              <h2 class="ps-5 pt-5 pe-5">Food Insecurity in New York City</h2>
-              <p class="text-light ps-5 pb-5 pe-5">
-                Over <span class="Stat">1.2 million</span>  experience food insecurity each year, meaning they do not always have reliable access to enough affordable, nutritious food. Organizations like Food Bank For New York City report that demand for food assistance has remained significantly higher than pre-pandemic levels, with many families relying on food pantries regularly.
+              <h2 class="ps-5 pt-5 pe-5 text-decoration-underline text-light">
+                Food Insecurity in New York City
+              </h2>
+              <p class="ps-5 pb-5 pe-5 text-light">
+                Over
+                <span class="fw-bold text-primary h2">1.2 million</span>
+                experience food insecurity each year, meaning they do not always
+                have reliable access to enough affordable, nutritious food.
+                Organizations like Food Bank For New York City report that
+                demand for food assistance has remained significantly higher
+                than pre-pandemic levels, with many families relying on food
+                pantries regularly.
               </p>
             </div>
             <div class="col-md p-0">
@@ -125,18 +210,13 @@
                 src="https://www.immanueltemplechurch.com/wp-content/uploads/2024/11/Food-Pantry.png"
               />
             </div>
-          </article>
-          <!-- ------------------------------------------ -->
-
+          </div>
+        </article>
       </section>
+    </main>
 
+    <footer class="">HOLAAAAAA</footer>
 
-
-  </main>
-
-  <footer class="">HOLAAAAAA</footer>
-
-  <script src="index.js" defer></script>
-</body>
-
+    <script src="index.js" defer></script>
+  </body>
 </html>

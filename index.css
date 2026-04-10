@@ -1,16 +1,4 @@
-:root {
-  --primary: #2e7d32;
-  --secondary: #66bb6a;
-  /* --background: #F7F9F4; */
-  --background: linear-gradient(135deg, #1f6f43, #2e8b57, #3fa34d);
-  --food_accent: #f4a261;
-  --shelter_accent: #8d6e63;
-  /* --text: #2f2f2f; */
-  --text : rgb(248, 249, 250);
-  --highlight: #8bc34a;
-  --call_to_action: #8bc34a;
-}
-
+@import url("nav.css");
 
 html {
   width: 100%;
@@ -22,49 +10,59 @@ body {
   /* color: var(--text); */
 }
 
-.food_accent {
-  background-color: var(--food_accent);
+[data-bs-theme="light"] {
+  --custom-bg-article-dark-theme: rgb(33 37 41);
+  #Information {
+    background-color: var(--bs-light);
+    background: linear-gradient(135deg, #1f6f43, #2e8b57, #3fa34d);
+  }
+  #Main_Title {
+    background: rgb(241, 131, 62);
+  }
 }
-.shelter_accent {
-  background-color: var(--shelter_accent);
+
+[data-bs-theme="dark"] {
+  --custom-bg-article-dark-theme: rgb(0, 0, 0);
+  #Main_Title {
+    background: rgb(216.9, 117.9, 55.8);
+  }
 }
-nav {
-  background-color: var(--secondary);
+.bg-article-dark-theme {
+  background-color: var(--custom-bg-article-dark-theme);
 }
-#Main_Title {
-  background: var(--background);
-}
-.Stat {
+
+/* .Stat {
   font-size: 2rem;
   font-weight: 700;
-  color: #8bc34a; /* your highlight green */
-}
+  color: #8bc34a; your highlight green
+} */
 
 .overflox-x-clip {
- overflow-x: clip;
+  overflow-x: clip;
 }
 
-article.bg-half-dark{
-  opacity: 0;
-
-  /* Apply the scroll-driven animation */
-  animation: slide-in-left linear forwards;
-  animation-timeline: view(); /* Links animation to element's visibility */
-  animation-range: entry 0% cover 30%; /* Adjust range as needed */
+article.bg-half-dark,
+article.bg-half-dark-reverse {
+  visibility: hidden;
 }
-article.bg-half-dark-reverse{
-  opacity: 0;
+article.bg-half-dark.on,
+article.bg-half-dark-reverse.on {
+  visibility: visible;
+}
 
-  /* Apply the scroll-driven animation */
-  animation: slide-in-right linear forwards;
-  animation-timeline: view(); /* Links animation to element's visibility */
-  animation-range: entry 0% cover 30%; /* Adjust range as needed */
+article.bg-half-dark.on {
+  animation: slide-in-left 2s ease-out forwards;
+}
+article.bg-half-dark-reverse.on {
+  animation: slide-in-right 2s ease-out forwards;
 }
 
 @keyframes slide-in-left {
   from {
     opacity: 0;
-    transform: translateX(-100%); /* Start position: fully off-screen to the left */
+    transform: translateX(
+      -100%
+    ); /* Start position: fully off-screen to the left */
   }
   to {
     opacity: 1;
@@ -74,7 +72,9 @@ article.bg-half-dark-reverse{
 @keyframes slide-in-right {
   from {
     opacity: 0;
-    transform: translateX(100%); /* Start position: fully off-screen to the left */
+    transform: translateX(
+      100%
+    ); /* Start position: fully off-screen to the left */
   }
   to {
     opacity: 1;
@@ -95,9 +95,8 @@ article.bg-half-dark-reverse{
   animation: fade-in-top 1s ease-out forwards;
 }
 
-
 @media (min-width: 768px) {
-  .bg-half-dark {
+  /* .bg-half-dark {
     background: #212529;
     background: linear-gradient(
       90deg,
@@ -112,5 +111,5 @@ article.bg-half-dark-reverse{
       rgba(33, 37, 41, 1) 50%,
       rgba(255, 0, 0, 0) 50%
     );
-  }
+  } */
 }

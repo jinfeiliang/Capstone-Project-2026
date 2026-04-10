@@ -1,0 +1,10 @@
+nav {
+  background-color: #66bb6a;
+}
+
+
+.nav-item:hover > a {
+  scale: 1.1;
+  transition: 0.1s linear;
+  color: var(--bs-white) !important;
+}
