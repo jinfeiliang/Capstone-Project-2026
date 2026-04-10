@@ -1,16 +1,8 @@
 
 
 let ACCESS_TOKEN;
-
-if (!API_KEYS.MAPBOX_API_TOKEN_ACCESS_KEY) {
   let person = prompt("Please enter your mapbox token");
-
-  if (person != null) {
-    ACCESS_TOKEN = person;
-  }
-} else {
-  ACCESS_TOKEN = API_KEYS.MAPBOX_API_TOKEN_ACCESS_KEY;
-}
+  ACCESS_TOKEN = person;
 
 mapboxgl.accessToken = ACCESS_TOKEN;
 
