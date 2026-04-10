@@ -1,3 +1,9 @@
+let person = prompt("Please enter your mapbox token");
+
+if (person != null) {
+  API_KEYS.MAPBOX_API_TOKEN_ACCESS_KEY = person;
+}
+
 const ACCESS_TOKEN = API_KEYS.MAPBOX_API_TOKEN_ACCESS_KEY;
 mapboxgl.accessToken = ACCESS_TOKEN;
 
@@ -63,7 +69,7 @@ function Add_List_Location_To_Map(Data) {
 
   Categorized_Data.forEach(async (Layer_Group, index) => {
     let Map_Marker_Data = [];
-    
+
     await Promise.all(
       Layer_Group.locations.map(async (location) => {
         const API_DATA_MANAGER = new DataProcessor(
@@ -278,4 +284,3 @@ document
 document
   .querySelector("#Map_Lighting_Light_BTN")
   .addEventListener("click", () => Map_Lighting_Change("day"));
-
